@@ -8,6 +8,12 @@
 	height: 18rem;
 }
 
+.image.is-working {
+	width: 18rem;
+	height: 18rem;
+}
+
+
 .image.is-study {
 	width: 20rem;
 	height: 20rem;
@@ -138,8 +144,35 @@
 
 @media screen and (max-width: 768px) {
 	.column.is-mobile-margin {
-		margin-bottom: 5rem !important;
-	}
+		margin-bottom: 5rem !important; }
+	.columns.is-resume {
+		margin-right: 1rem !important;
+	    margin-left: 1rem !important; }
+
+	.image.is-working {
+		width: 12rem;
+		height: 12rem; }
+	.image.is-wow {
+		width: 13rem;
+		height: 13rem; }
+	.image.is-worker {
+		width: 10rem;
+		height: 10rem; }
+	.image.is-balloon {
+		width: 8rem;
+		height: 8rem; }
+
+	.title.is-1 {
+	    font-size: 2rem; }
+	  .title.is-3 {
+	    font-size: 1.25rem; }
+	  .title.is-5 {
+	    font-size: 0.75rem; }
+	.title.is-0 {
+		font-size: 2rem;
+		margin-bottom: 3rem; }
+	.column.is-devtool {
+		font-size: 2rem; }
 }
 
 html {
