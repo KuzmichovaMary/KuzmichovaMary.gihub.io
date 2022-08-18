@@ -1,52 +1,174 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Resume</title>
-    <!--<link href="https://fonts.googleapis.com/css?family=Montserrat:ital,wght@0,200;0,400;0,600;0,700;1,400&family=Rubik+Burned&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">-->
-    <link href="css/mystyles.css" rel="stylesheet" />
-  </head>
-  <body>
-  <section class="hero is-primary is-large">
-  <div class="hero-head">
-    <nav class="navbar">
-      <div class="container">
-        <div id="navbarMenuHeroB" class="navbar-menu">
-          <div class="navbar-end">
-            <a class="navbar-item">
-              Опыт работы
-            </a>
-            <a class="navbar-item">
-              Образование
-            </a>
-            <a class="navbar-item">
-              Навыки
-            </a>
-            <a class="navbar-item">
-              Про меня
-            </a>
-            <a class="navbar-item">
-              Достижения
-            </a>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Resume</title>
+        <!--<link href="https://fonts.googleapis.com/css?family=Montserrat:ital,wght@0,200;0,400;0,600;0,700;1,400&family=Rubik+Burned&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">-->
+        <script src="https://use.fontawesome.com/releases/v6.1.2/js/all.js" crossorigin="anonymous"></script>
+        <link href="css/mystyles.css" rel="stylesheet" />
+        <link href="css/style.css" rel="stylesheet" />
+    </head>
+    <body>
+        <nav class="navbar is-transparent">
+          <div class="container">
+            <div id="navbarMenuHeroB" class="navbar-menu">
+              <div class="navbar-end">
+                <a class="navbar-item" href="#experience">
+                  <span class="dark">ОПЫТ РАБОТЫ</span>
+                </a>
+                <a class="navbar-item" href="#education">
+                  <span class="dark">ОБРАЗОВАНИЕ</span>
+                </a>
+                <a class="navbar-item" href="#tools">
+                  <span class="dark">НАВЫКИ</span>
+                </a>
+                <a class="navbar-item" href="#about">
+                  <span class="dark">ПРО МЕНЯ</span>
+                </a>
+                <a class="navbar-item" href="#achievements">
+                  <span class="dark">ДОСТИЖЕНИЯ</span>
+                </a>
+              </div>
+            </div>
           </div>
+        </nav>
+
+        <div class="columns is-resume">
+            <div class="column is-one-half">
+                <p class="title is-1 is-900"><span class="etonblue">КУЗЬМИЧЕВА</span> МАРИЯ</p>
+                <p class="title is-3">Я python-разработчик.</p>
+                <div class="columns is-mobile">
+                    <div class="column">
+                        <a class="social-icon" href="https://t.me/maryshca">
+                            <i class="fab fa-telegram"></i>
+                        </a>
+                    </div>
+                    <div class="column">
+                        <a class="social-icon" href="https://github.com/KuzmichovaMary">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                    <div class="column">
+                        <a class="social-icon" href="mailto:kuzmichovamary@gmail.com">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                    <div class="column"></div>
+                    <div class="column"></div>
+                </div>
+            </div>
+            <div class="column logo">
+                <figure class="image is-16">
+                    <img src="assets/img/profile.jpg" class="is-rounded">
+                </figure>
+            </div>
         </div>
-      </div>
-    </nav>
-  </div>
 
-  <div class="hero-body">
-    <div class="container has-text-left">
-      <p class="title">
-        Кузьмичева Мария
-      </p>
-      <p class="subtitle">
-        Я python-разработчик.
-      </p>
-    </div>
-  </div>
+        <div class="columns is-resume" id="experience">
+            <div class="column is-three-fifths">
+                <h1 class="title is-900 is-0">Опыт работы</h1>
+                <p class="title is-3">Приемная комиссия истфака МГУ</p>
+                <p class="title is-5">Была создана программа, 
+                автоматизирующая проверку экзаменационных работ.</p>
+            </div>
+            <div class="column centered">
+                <figure class="image is-worker">
+                    <img src="assets/img/worker.png">
+                </figure>
+            </div>
+        </div>
 
-</section>
-  </body>
+        <div class="columns is-resume" id="education">
+            <div class="column is-three-fifths">
+                <h1 class="title is-900 is-0">Образование</h1>
+                <div class="columns">
+                    <div class="column is-two-thirds">
+                        <p class="title is-3">МГУ имени М.В. Ломоносова</p>
+                        <p class="title is-5">механико-математический факультет</p>
+                    </div>
+                    <div class="column is-primary">2022-2028</div>
+                </div>
+                <p class="title is-0"></p>
+                <p class="title is-0"></p>
+                <div class="columns">
+                    <div class="column is-two-thirds">
+                        <p class="title is-3">Лицей при академии Яндекса</p>
+                        <p class="title is-5">аттестат с отличием</p>
+                    </div>
+                    <div class="column is-primary">2019-2021</div>
+                </div>
+            </div>
+            <div class="column centered">
+                <figure class="image is-study">
+                    <img src="assets/img/studying.png">
+                </figure>
+            </div>
+        </div>
+        <div class="columns is-resume" id="tools">
+            <div class="column is-one-half">
+                <h1 class="title is-900 is-0">Навыки</h1>
+                <div class="columns with-top-bottom is-mobile">
+                    <div class="column is-devtool">
+                        <i class="fab fa-python"></i>
+                    </div>
+                    <div class="column is-devtool">
+                        <i class="fab fa-stack-overflow"></i>
+                    </div>
+                    <div class="column is-devtool">
+                        <i class="fab fa-git"></i>
+                    </div>
+                    <div class="column is-devtool">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <div class="column is-devtool">
+                        <i class="fab fa-html5"></i>
+                    </div>
+                    <div class="column is-devtool">
+                        <i class="fab fa-css3-alt"></i>
+                    </div>
+                </div>
+                <p class="title is-5">Я умею гореть проектом, учиться новому, гуглить решения, писать код...</p>
+            </div>
+            <div class="column centered">
+                <figure class="image is-leizure">
+                    <img src="assets/img/working.png">
+                </figure>
+            </div>
+        </div>
+        <div class="columns is-resume" id="about">
+            <div class="column is-two-thirds">
+                <h1 class="title is-900 is-0">Про себя</h1>
+                <p class="title is-5">Я люблю читать, ходить в походы, собак, рисовать, шить, периодически мне нравится готовить. Вообще, разносторонне развитый человек :-)</p>
+                <p class="title is-5">Из технологических отраслей меня больше всего интересуют self-driving машины (конечно, хочется, чтобы они еще и летали).</p>
+            </div>
+            <div class="column centered">
+                <figure class="image is-leizure">
+                    <img src="assets/img/leizure.png">
+                </figure>
+            </div>
+        </div>
+        <div class="columns is-resume" id="achievements">
+            <div class="column is-two-thirds">
+                <h1 class="title is-900 is-0">Достижения</h1>
+                <ul>
+                    <li>
+                        <p class="title is-5"><i class="fas fa-trophy is-trophy"></i>
+                        Призер муниципального этапа ВСОШ по информатике</p>
+                    </li>
+                    <div class="smallblock"></div>
+                    <li>
+                        <p class="title is-5"><i class="fas fa-trophy is-trophy"></i>
+                        Яндекс.Лицей Сертификат с отличием</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="column centered">
+                <figure class="image is-wow">
+                    <img src="assets/img/wow.png">
+                </figure>
+            </div>
+        </div>
+    </body>
 </html>
