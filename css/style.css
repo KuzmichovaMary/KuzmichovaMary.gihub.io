@@ -19,6 +19,11 @@
 }
 
 .image.is-worker {
+	width: 13rem;
+	height: 13rem;
+}
+
+.image.is-balloon {
 	width: 12rem;
 	height: 12rem;
 }
@@ -117,6 +122,10 @@
 	font-size: 4rem;
 }
 
+.column.is-balloon {
+	margin-top: -10rem !important;
+}
+
 .is-trophy {
 	color: #FDCD00;
 	font-size: 1.25rem;
@@ -124,4 +133,31 @@
 
 .smallblock {
   margin-bottom: 1rem;
+}
+
+
+@media screen and (max-width: 768px) {
+	.column.is-mobile-margin {
+		margin-bottom: 5rem !important;
+	}
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.image.is-spy {
+  margin-top: -15rem;
+  width: 10rem;
+  height: 10rem;
+  position: relative;
+  animation-name: example;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+}
+
+
+@keyframes example {
+  0%   {left:2rem; top:0rem;}
+  100% {left:2rem; top:13rem;}
 }
