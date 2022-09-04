@@ -13,6 +13,11 @@
 	height: 18rem;
 }
 
+.image.is-gif {
+	width: 23rem;
+	height: 23rem;
+}
+
 
 .image.is-study {
 	width: 20rem;
@@ -32,6 +37,12 @@
 .image.is-balloon {
 	width: 12rem;
 	height: 12rem;
+}
+
+.image.is-hi {
+	width: 12rem;
+	height: 12rem;
+	margin-bottom: 11rem !important;
 }
 
 .column.with-top-bottom {
@@ -147,7 +158,8 @@
 		margin-bottom: 5rem !important; }
 	.columns.is-resume {
 		margin-right: 1rem !important;
-	    margin-left: 1rem !important; }
+	    margin-left: 1rem !important;
+	    margin-bottom: 8rem !important; }
 
 	.image.is-working {
 		width: 12rem;
