@@ -15,7 +15,7 @@
 
 .image.is-gif {
 	width: 23rem;
-	height: 23rem;
+	margin-bottom: 1rem;
 }
 
 
@@ -42,7 +42,6 @@
 .image.is-hi {
 	width: 12rem;
 	height: 12rem;
-	margin-bottom: 11rem !important;
 }
 
 .column.with-top-bottom {
