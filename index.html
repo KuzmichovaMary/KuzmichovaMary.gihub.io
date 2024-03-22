@@ -9,6 +9,15 @@
         <script src="https://use.fontawesome.com/releases/v6.1.2/js/all.js" crossorigin="anonymous"></script>
         <link href="css/mystyles.css" rel="stylesheet" />
         <link href="css/style.css" rel="stylesheet" />
+        <style>
+        /* CSS style to add dot before each list item */
+        ul.skills {
+            list-style-type: none; /* Remove default list styles */
+        }
+        li.skills::before {
+            content: "• "; /* Add dot before each list item */
+        }
+    </style>
     </head>
     <body>
         <nav class="navbar is-transparent">
@@ -22,23 +31,23 @@
             <div class="container">
                 <div id="navbarMenuHeroB" class="navbar-menu">
                   <div class="navbar-end">
-                    <a class="navbar-item" href="#experience">
-                      <span class="dark">ОПЫТ РАБОТЫ</span>
-                    </a>
-                    <a class="navbar-item" href="#projects">
-                      <span class="dark">Проекты</span>
-                    </a>
                     <a class="navbar-item" href="#education">
                       <span class="dark">ОБРАЗОВАНИЕ</span>
+                    </a>
+                    <a class="navbar-item" href="#projects">
+                      <span class="dark">ПРОЕКТЫ</span>
                     </a>
                     <a class="navbar-item" href="#tools">
                       <span class="dark">НАВЫКИ</span>
                     </a>
-                    <a class="navbar-item" href="#about">
-                      <span class="dark">ПРО МЕНЯ</span>
-                    </a>
                     <a class="navbar-item" href="#achievements">
                       <span class="dark">ДОСТИЖЕНИЯ</span>
+                    </a>
+                    <a class="navbar-item" href="#experience">
+                      <span class="dark">ОПЫТ РАБОТЫ</span>
+                    </a>
+                    <a class="navbar-item" href="#about">
+                      <span class="dark">ПРО МЕНЯ</span>
                     </a>
                   </div>
                 </div>
@@ -48,7 +57,7 @@
         <div class="columns is-multiline is-resume">
             <div class="column is-one-half is-full-mobile">
                 <p class="title is-1 is-900"><span class="etonblue">КУЗЬМИЧЕВА</span> МАРИЯ</p>
-                <p class="title is-3">Я python-разработчик.</p>
+                <p class="title is-3">С++ разработчик</p>
                 <div class="columns is-mobile">
                     <div class="column">
                         <a class="social-icon" href="https://t.me/maryshca">
@@ -76,28 +85,6 @@
             </div>
         </div>
 
-        <div class="columns is-multiline is-resume" id="experience">
-            <div class="column is-one-half is-mobile-margin is-full-mobile">
-                <h1 class="title is-900 is-0">Опыт работы</h1>
-                <p class="title is-3">Предметная экзаменационная комиссия исторического факультета МГУ</p>
-                <p class="title is-5">Была создана программа, автоматизирующая процесс обработки рецензий на работы абитуриентов.</p>
-            </div>
-            <div class="column is-full-mobile">
-                <div class="columns is-mobile is-gapless">
-                    <div class="column centered is-balloon">
-                        <figure class="image is-balloon">
-                            <img src="assets/img/worker-says.png">
-                        </figure>
-                    </div>
-                    <div class="column">
-                        <figure class="image is-worker">
-                            <img src="assets/img/worker.png">
-                        </figure>
-                    </div>
-                </div>
-            </div>
-        </div>
-
         <div class="columns is-multiline is-resume" id="projects">
             <div class="column is-three-fifths is-mobile-margin is-full-mobile">
                 <h1 class="title is-900 is-0">Проекты</h1>
@@ -109,7 +96,24 @@
                             ссылка на сайт
                         </a></p>
                     </div>
-                    <div class="column is-primary">2022-</div>
+                </div>
+                <div class="columns">
+                    <div class="column is-two-thirds">
+                        <p class="title is-3">Генератор карт на C++</p>
+                        <p class="title is-5">триангуляция Делоне и красота;)</p>
+                        <p class="title is-5"><a href="https://mech-math-msu.github.io/map-generator/html/">
+                            ссылка на сайт
+                        </a></p>
+                    </div>
+                </div>
+                <div class="columns">
+                    <div class="column is-two-thirds">
+                        <p class="title is-3">Телеграм-бот для применения различных стилей к картинке</p>
+                        <p class="title is-5">аватарка на сайте из бота</p>
+                        <p class="title is-5"><a href="https://github.com/KuzmichovaMary/telegram-bot-style-transfer">
+                            ссылка на github
+                        </a></p>
+                    </div>
                 </div>
             </div>
                 
@@ -196,62 +200,9 @@
                 </figure>
             </div>
         </div>
-        <div class="columns is-multiline is-resume" id="tools">
-            <div class="column is-one-half is-mobile-margin is-full-mobile">
-                <h1 class="title is-900 is-0">Что я умею</h1>
-                <div class="columns with-top-bottom is-mobile">
-                    <div class="column is-devtool">
-                        <i class="fab fa-python"></i>
-                    </div>
-                    <div class="column is-devtool">
-                        <i class="fab fa-stack-overflow"></i>
-                    </div>
-                    <div class="column is-devtool">
-                        <i class="fab fa-git"></i>
-                    </div>
-                    <div class="column is-devtool">
-                        <i class="fas fa-database"></i>
-                    </div>
-                    <div class="column is-devtool">
-                        <i class="fab fa-html5"></i>
-                    </div>
-                    <div class="column is-devtool">
-                        <i class="fab fa-css3-alt"></i>
-                    </div>
-                </div>
-                <p class="title is-5">Я умею гореть проектом, учиться новому, гуглить решения, писать код...</p>
-            </div>
-            <div class="column is-full-mobile">
-                <div class="columns is-mobile is-gapless">
-                    <div class="column centered is-balloon">
-                        <figure class="image is-balloon">
-                            <img src="assets/img/working-says.png">
-                        </figure>
-                    </div>
-                    <div class="column">
-                        <figure class="image is-working">
-                            <img src="assets/img/working.png">
-                        </figure>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="columns is-multiline is-resume" id="about">
-            <div class="column is-two-thirds is-mobile-margin is-full-mobile">
-                <h1 class="title is-900 is-0">Про себя</h1>
-                <p class="title is-5">Я люблю читать, ходить в походы, собак, рисовать, шить, периодически мне нравится готовить. Вообще, разносторонне развитый человек :-)</p>
-                <p class="title is-5">Из технологических отраслей меня больше всего интересуют self-driving машины (конечно, хочется, чтобы они еще и летали).</p>
-            </div>
-            <div class="column centered is-full-mobile">
-                <figure class="image is-leizure">
-                    <img src="assets/img/leizure.png">
-                </figure>
-            </div>
-        </div>
-
         <div class="columns is-multiline is-resume" id="achievements">
             <div class="column is-one-half is-mobile-margin is-full-mobile">
-                <h1 class="title is-900 is-0">Опыт работы</h1>
+                <h1 class="title is-900 is-0">Достижения</h1>
                 <ul>
                     <li>
                         <p class="title is-5"><i class="fas fa-trophy is-trophy"></i>
@@ -277,6 +228,93 @@
                         </figure>
                     </div>
                 </div>
+            </div>
+        </div>
+        <div class="columns is-multiline is-resume" id="tools">
+            <div class="column is-one-half is-mobile-margin is-full-mobile">
+                <h1 class="title is-900 is-0">Что я умею</h1>
+                <div class="columns with-top-bottom is-mobile">
+                    <div class="column is-devtool">
+                        <i class="fab fa-python"></i>
+                    </div>
+                    <div class="column is-devtool">
+                        <i class="fab fa-stack-overflow"></i>
+                    </div>
+                    <div class="column is-devtool">
+                        <i class="fab fa-git"></i>
+                    </div>
+                    <div class="column is-devtool">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <div class="column is-devtool">
+                        <i class="fab fa-html5"></i>
+                    </div>
+                    <div class="column is-devtool">
+                        <i class="fab fa-css3-alt"></i>
+                    </div>
+                </div>
+                <ul class="skills title is-5">
+                    <li class="skills">STL, gcc/gdb</li>
+                    <li class="skills">Структуры данных и алгоритмы</li>
+                    <li class="skills">Unix/Linux, Makefile</li>
+                    <li class="skills">Git</li>
+                    <li class="skills">CI/CD с Docker и GitHub Actions</li>
+                    <li class="skills">Работа с Postgres</li>
+                    <li class="skills">Опыт работы с протоколами TCP/IP и HTTP</li>
+                    <li class="skills">Английский язык на уровне B2</li>
+                </ul>
+                <p class="title is-5">Я умею гореть проектом, учиться новому, гуглить решения, писать код...</p>
+            </div>
+            <div class="column is-full-mobile">
+                <div class="columns is-mobile is-gapless">
+                    <div class="column centered is-balloon">
+                        <figure class="image is-balloon">
+                            <img src="assets/img/working-says.png">
+                        </figure>
+                    </div>
+                    <div class="column">
+                        <figure class="image is-working">
+                            <img src="assets/img/working.png">
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="columns is-multiline is-resume" id="experience">
+            <div class="column is-one-half is-mobile-margin is-full-mobile">
+                <h1 class="title is-900 is-0">Опыт работы</h1>
+                <p class="title is-3">Предметная экзаменационная комиссия исторического факультета МГУ</p>
+                <p class="title is-5">Была создана программа, автоматизирующая процесс обработки рецензий на работы абитуриентов.</p>
+            </div>
+            <div class="column is-full-mobile">
+                <div class="columns is-mobile is-gapless">
+                    <div class="column centered is-balloon">
+                        <figure class="image is-balloon">
+                            <img src="assets/img/worker-says.png">
+                        </figure>
+                    </div>
+                    <div class="column">
+                        <figure class="image is-worker">
+                            <img src="assets/img/worker.png">
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="columns is-multiline is-resume" id="about">
+            <div class="column is-two-thirds is-mobile-margin is-full-mobile">
+                <h1 class="title is-900 is-0">Про себя</h1>
+                <p class="title is-5">Я люблю читать, ходить в походы, собак, рисовать, шить, периодически мне нравится готовить. Вообще, разносторонне развитый человек :-)</p>
+                <p class="title is-5">Из технологических отраслей меня больше всего интересуют self-driving машины (конечно, хочется, чтобы они еще и летали).</p>
+            </div>
+            <div class="column centered is-full-mobile">
+                <figure class="image is-leizure">
+                    <img src="assets/img/leizure.png">
+                </figure>
             </div>
         </div>
 
